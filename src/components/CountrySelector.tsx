@@ -76,11 +76,11 @@ export function CountrySelector({
             <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="p-0 w-full" align="start">
+        <PopoverContent className="w-full p-0">
           <Command>
             <CommandInput placeholder="Search country..." />
             <CommandEmpty>No country found.</CommandEmpty>
-            <CommandGroup className="max-h-[300px] overflow-y-auto">
+            <CommandGroup>
               {countries.map((country) => (
                 <CommandItem
                   key={country.value}
